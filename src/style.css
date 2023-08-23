@@ -1,0 +1,9 @@
+.header > a {
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
