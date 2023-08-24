@@ -1,9 +1,15 @@
-.header > a {
-    text-decoration: none;
+body {
+    margin: 0 auto;
+}
+
+header > nav {
     font-weight: 900;
 }
 
-.header {
+header {
     display: flex;
     justify-content: space-around;
+    background-color: rgb(79, 78, 78);
+    color: white;
+    padding: 10px;
 }
