@@ -1,15 +1,38 @@
+@font-face {
+    font-family: 'DMSans';
+    src: url('./DMSans.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DMSerifDisplay';
+    src: url('./DMSerifDisplay.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+}
+
 body {
     margin: 0 auto;
+    background: url('./tempbg.jpeg') fixed 0 0;
 }
 
 header > nav {
-    font-weight: 900;
+    font-family: 'DMSans';
 }
 
 header {
     display: flex;
     justify-content: space-around;
-    background-color: rgb(79, 78, 78);
+    background-color: rgb(35, 33, 33);
     color: white;
     padding: 10px;
+}
+
+.hero {
+    font-family: 'DMSerifDisplay';
+    font-size: 10em;
+    color: rgba(255, 255, 255, 0.854);
+    padding: 20px;
+    line-height: 8rem;
 }
