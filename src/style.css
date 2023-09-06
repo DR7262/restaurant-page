@@ -12,9 +12,17 @@
     font-style: normal;
 }
 
+html {
+    font-family: 'DMSans';
+}
+
 body {
     margin: 0 auto;
     background: url('./tempbg.jpeg') fixed no-repeat 0 0;
+}
+
+div {
+    box-sizing: border-box;
 }
 
 header > nav {
@@ -27,7 +35,12 @@ header {
     display: flex;
     justify-content: space-around;
     color: white;
+    height: 8vh;
+    width: 100vw;
     padding: 10px;
+    position: fixed;
+    top: 0px;
+    background-color: black;
 }
 
 nav:hover {
@@ -43,4 +56,18 @@ nav:hover {
     line-height: 8rem;
     margin: auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mission {
+    background-color: white;
+    padding: 100px;
+    height: 100vh;
+}
+
+.missionText {
+    padding: 2em;
 }
