@@ -21,14 +21,21 @@ body {
     background: url('./tempbg.jpeg') fixed no-repeat 0 0;
 }
 
-div {
+div,
+nav {
     box-sizing: border-box;
 }
 
 header > nav {
     font-family: 'DMSans';
-    padding: 20px;
+    padding: 10px;
     border-radius: 9px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 30vw;
 }
 
 header {
@@ -37,7 +44,6 @@ header {
     color: white;
     height: 8vh;
     width: 100vw;
-    padding: 10px;
     position: fixed;
     top: 0px;
     background-color: black;
