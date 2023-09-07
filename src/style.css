@@ -54,7 +54,8 @@ nav:hover {
     cursor: pointer;
 }
 
-.hero {
+.hero,
+.menu {
     font-family: 'DMSerifDisplay';
     font-size: 5em;
     color: rgb(255, 255, 255);
