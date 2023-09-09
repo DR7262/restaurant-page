@@ -31,5 +31,5 @@ navButtons.forEach(element => {
 });
 
 
-switchTab(home);
+switchTab(contact);
 console.log("Test Successful!");
