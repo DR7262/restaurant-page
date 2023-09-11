@@ -13,4 +13,4 @@ function createDOMElement(type, domClass) {
     return element;
 };
 
-export default { createBoxText, createDOMElement };
+export { createBoxText, createDOMElement };
