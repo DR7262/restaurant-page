@@ -18,14 +18,27 @@ const bookTable = createDOMElement("button", "bookTable");
 bookTable.textContent = "BOOK TABLE";
 box1.appendChild(bookTable);
 
-
 const box2 = document.createElement('div');
 box2.textContent = "Order Online";
 box2.classList.add('contactBox');
 
 const box3 = document.createElement('div');
-box3.textContent = "Feedback Form";
+
 box3.classList.add('contactBox');
+
+const feedback = createDOMElement('div', 'forms');
+feedback.textContent = "Feedback Form";
+const nameForm = createDOMElement('div', 'name', 'form');
+nameForm.textContent = "Name"
+const customerName = createDOMElement('input');
+customerName.setAttribute('type', 'text');
+customerName.setAttribute('name', 'name');
+customerName.setAttribute('placeholder', 'Name');
+nameForm.appendChild(customerName);
+
+feedback.appendChild(nameForm);
+
+box3.appendChild(feedback);
 
 contactBoxes.appendChild(box1);
 contactBoxes.appendChild(box2);
