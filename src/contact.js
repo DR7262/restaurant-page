@@ -28,6 +28,7 @@ box3.classList.add('contactBox');
 
 const feedback = createDOMElement('div', 'forms');
 feedback.textContent = "Feedback Form";
+
 const nameForm = createDOMElement('div', 'name', 'form');
 nameForm.textContent = "Name"
 const customerName = createDOMElement('input');
@@ -36,9 +37,31 @@ customerName.setAttribute('name', 'name');
 customerName.setAttribute('placeholder', 'Name');
 nameForm.appendChild(customerName);
 
+const emailForm = createDOMElement('div', 'email', 'form');
+emailForm.textContent = "E-mail"
+const customerEmail = createDOMElement('input');
+customerEmail.setAttribute('type', 'text');
+customerEmail.setAttribute('name', 'email');
+customerEmail.setAttribute('placeholder', 'E-mail');
+emailForm.appendChild(customerEmail);
+
+const commentForm = createDOMElement('div', 'email', 'form');
+commentForm.textContent = "E-mail"
+const customerComment = createDOMElement('textarea', 'comment');
+customerComment.setAttribute('type', 'text');
+customerComment.setAttribute('name', 'Comments');
+customerComment.setAttribute('placeholder', 'Please leave comments here');
+commentForm.appendChild(customerComment);
+
+const submitComment = createDOMElement("button", "submitComment");
+submitComment.textContent = "SUBMIT";
+
 feedback.appendChild(nameForm);
+feedback.appendChild(emailForm);
+feedback.appendChild(commentForm);
 
 box3.appendChild(feedback);
+box3.appendChild(submitComment);
 
 contactBoxes.appendChild(box1);
 contactBoxes.appendChild(box2);
