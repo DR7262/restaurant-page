@@ -55,7 +55,7 @@ nav:hover {
 }
 
 .hero,
-.menu,
+.menuTitle,
 .contact {
     font-family: 'DMSerifDisplay';
     color: rgb(255, 255, 255);
@@ -81,6 +81,19 @@ nav:hover {
 
 .missionText {
     padding: 2em;
+}
+
+.menuTitle {
+    font-size: 5em;
+    line-height: 8rem;
+    height: 40vh;
+}
+
+.menu {
+    background-color: rgb(41, 40, 40);
+    width: 90vw;
+    height: 100vh;
+    margin: 0 auto;
 }
 
 .contact {
