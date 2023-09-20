@@ -1,4 +1,6 @@
 import {createBoxText, createDOMElement} from "./domFunctions.js";
+import uberImg from './ubereats.png'
+import doorImg from './doordash.svg'
 
 const contactTitle = document.createElement('div');
 contactTitle.textContent = 'Contact Us';
@@ -21,6 +23,12 @@ box1.appendChild(bookTable);
 const box2 = document.createElement('div');
 box2.textContent = "Order Online";
 box2.classList.add('contactBox');
+const ubereats = createDOMElement('img', 'uberImg');
+ubereats.src = uberImg;
+const doordash = createDOMElement('img', 'doorImg');
+doordash.src = doorImg;
+box2.appendChild(ubereats);
+box2.appendChild(doordash);
 
 const box3 = document.createElement('div');
 
@@ -34,7 +42,7 @@ nameForm.textContent = "Name"
 const customerName = createDOMElement('input');
 customerName.setAttribute('type', 'text');
 customerName.setAttribute('name', 'name');
-customerName.setAttribute('placeholder', 'Name');
+customerName.setAttribute('placeholder', 'John Doe');
 nameForm.appendChild(customerName);
 
 const emailForm = createDOMElement('div', 'email', 'form');
@@ -42,7 +50,7 @@ emailForm.textContent = "E-mail"
 const customerEmail = createDOMElement('input');
 customerEmail.setAttribute('type', 'text');
 customerEmail.setAttribute('name', 'email');
-customerEmail.setAttribute('placeholder', 'E-mail');
+customerEmail.setAttribute('placeholder', 'e-mail@example.com');
 emailForm.appendChild(customerEmail);
 
 const commentForm = createDOMElement('div', 'email', 'form');

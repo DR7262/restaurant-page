@@ -1,5 +1,4 @@
 import './style.css';
-import bg1 from './tempbg.jpeg'
 import home from './home';
 import menu from './menu';
 import contact from './contact';
@@ -31,5 +30,5 @@ navButtons.forEach(element => {
 });
 
 
-switchTab(menu);
+switchTab(home);
 console.log("Test Successful!");

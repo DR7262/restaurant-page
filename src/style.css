@@ -91,11 +91,14 @@ nav:hover {
 
 .menu {
     background-color: rgb(41, 40, 40);
+    display: flex;
+    flex-direction: column;
     width: 90vw;
     height: min-content;
     margin: 0 auto;
     padding: 20px;
     margin-bottom: 50px;
+    gap: 20px;
 }
 
 .menuItem {
@@ -105,6 +108,7 @@ nav:hover {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    border-radius: 9px;
 }
 
 .menuItemHeader {
@@ -163,10 +167,29 @@ nav:hover {
 }
 
 .bookTable:active,
-.submitComment:active {
+.submitComment:active,
+.uberImg:active {
     box-shadow: 0px 1px rgb(107, 107, 107);
     transform: translateY(2px);
     background-color: rgb(227, 209, 181);
+}
+
+.uberImg,
+.doorImg {
+    height: 150px;
+    border-radius: 9px;
+    cursor: pointer;
+    box-shadow: 0px 2px rgb(107, 107, 107);
+    object-fit: cover;
+}
+
+.doorImg {
+    background-color: white;
+}
+
+.doorImg:active {
+    box-shadow: 0px 1px rgb(107, 107, 107);
+    transform: translateY(2px);
 }
 
 .forms,
