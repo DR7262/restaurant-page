@@ -92,8 +92,25 @@ nav:hover {
 .menu {
     background-color: rgb(41, 40, 40);
     width: 90vw;
-    height: 100vh;
+    height: min-content;
     margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.menuItem {
+    width: 100%;
+    background-color: rgb(160, 160, 160);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.menuItemHeader {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
 }
 
 .contact {
