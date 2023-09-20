@@ -21,7 +21,7 @@ bookTable.textContent = "BOOK TABLE";
 box1.appendChild(bookTable);
 
 const box2 = document.createElement('div');
-box2.textContent = "Order Online";
+box2.innerHTML = "<b>Order Online<b>";
 box2.classList.add('contactBox');
 const ubereats = createDOMElement('img', 'uberImg');
 ubereats.src = uberImg;
@@ -35,7 +35,7 @@ const box3 = document.createElement('div');
 box3.classList.add('contactBox');
 
 const feedback = createDOMElement('div', 'forms');
-feedback.textContent = "Feedback Form";
+feedback.innerHTML = "<b>Feedback Form</b>";
 
 const nameForm = createDOMElement('div', 'name', 'form');
 nameForm.textContent = "Name"
